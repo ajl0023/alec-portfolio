@@ -11,9 +11,6 @@ const config = {
 	}),
 	kit: {
 		adapter: adapter(),
-		prerender: {
-			entries: ['*', '/sellers/decide-to-sell']
-		}
 	}
 };
 
