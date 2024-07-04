@@ -7,8 +7,10 @@ module.exports = {
 	],
 	theme: {
 		fontFamily: {
-			sans: ['Sen', 'sans-serif'],
+			
+			sans: ['Montserrat', 'sans-serif'],
 			serif: ['Arial', 'serif'],
+
 		},
 		extend: {
 			colors: {
@@ -21,7 +23,7 @@ module.exports = {
 			addVariant('not-last', '&:not(:last-child)');
 		}),
 		require('@tailwindcss/aspect-ratio'),
-		require('@tailwindcss/line-clamp'),
+
 		require('@tailwindcss/typography'),
 
 	]

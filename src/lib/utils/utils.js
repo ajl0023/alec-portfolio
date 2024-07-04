@@ -1,5 +1,8 @@
 import _ from 'lodash-es';
 import { image_url } from '../dev';
+import imageUrlBuilder from '@sanity/image-url';
+import client from '$lib/sanity/client';
+const builder = imageUrlBuilder(client);
 export async function getJson(fetch) {
 	const req = await fetch;
 	const data = await req.json();
@@ -8,7 +11,19 @@ export async function getJson(fetch) {
 export function parseIfTruthy(str) {
 	return str ? Number(str) : null;
 }
+export function sanityAssetUrl(source) {
+	return builder.image(source)
+}
+export async function getImages(param) {
+	const response = await fetch(`http://localhost:3000/images?folder=${param}`);
 
+	if (response.ok) {
+
+		return { images: await response.json() }
+	} else {
+		return;
+	}
+}
 export const slugify = (string) => {
 	// Remove leading and trailing slashes
 	string = string.replace(/^\/|\/$/g, '');

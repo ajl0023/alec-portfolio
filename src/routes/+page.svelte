@@ -1,20 +1,22 @@
 <script>
-	import Carousel from 'svelte-carousel';
+	import emblaCarouselSvelte from 'embla-carousel-svelte';
+	import { sanityAssetUrl } from '$lib/sanity/imageBuilderUrl';
+
+	export let data;
+	
+	const carousel_images = data.images[0].carousel;
 </script>
 
-<div class="wrapper flex justify-between m-auto max-w-6xl w-full p-5">
-	<div class="header-container container">
-		<h1 class="uppercase text-blue2 font-[600] mb-2 text-3xl tracking-wide">alec wang</h1>
-		<div class="bottom-container lg:flex justify-between">
-			<p class="text-white">Actor, Los Angeles CA</p>
-			<ul class="nav-list-container flex text-white space-x-7 font-thin">
-				<li>Home</li>
-				<li>Resume</li>
-				<li>Gallery</li>
-				<li>Reel</li>
-				<li>Contact</li>
-			</ul>
-			<img src="/images/Website Landing Photo.png" alt="" />
+<div class="">
+	<div class="carousel-wrapper mt-10">
+		<div class="embla" use:emblaCarouselSvelte>
+			<div class="embla__container">
+				{#each carousel_images as image}
+					<div class="embla__slide img-container">
+						<img src="{sanityAssetUrl(image)}" alt="" />
+					</div>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>

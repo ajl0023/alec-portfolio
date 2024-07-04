@@ -1,6 +1,6 @@
-import { dev } from '$app/environment';
+import { dev } from "$app/environment";
 
-let test_prod = true;
+let test_prod = false;
 let dev_test = !dev ? false : test_prod ? false : true;
 
 export const image_url = dev_test
@@ -13,3 +13,4 @@ export const url_new = dev_test
 export const strapi_token = dev_test
 	? import.meta.env.VITE_STRAPI_DEV_TOKEN
 	: import.meta.env.VITE_STRAPI_TOKEN;
+
