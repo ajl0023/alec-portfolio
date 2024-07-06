@@ -9,17 +9,23 @@
 	onMount(() => {
 		pageload = true;
 	});
-	
 </script>
 
 <div class="main-container overflow-hidden">
 	<div class="wrapper m-auto max-w-4xl w-full p-5">
 		<Navbar />
 
-		{#key $page.url || pageload}
-			<div class="content-wrapper z-[2] relative" in:fade="{{ delay: 250, duration: 300 }}">
-				<slot />
+		{#if pageload}
+			<div in:fade|local="{{ delay: 200, duration: 300 }}">
+				{#key $page}
+					<div class="content-wrapper z-[2]" in:fade="{{ delay: 200, duration: 300 }}">
+						<slot />
+					</div>
+				{/key}
 			</div>
-		{/key}
+		{/if}
 	</div>
 </div>
+
+<style>
+</style>
