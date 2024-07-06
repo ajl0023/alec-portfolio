@@ -1,9 +1,11 @@
 <script>
+	import { fade } from 'svelte/transition';
+
 	let email = '';
 	let message = '';
 	let subject = '';
 	let name = '';
-
+	let success = false;
 	async function handleSubmit(event) {
 		event.preventDefault();
 		const myForm = event.target;
@@ -15,7 +17,13 @@
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: new URLSearchParams(formData).toString()
 		})
-			.then(() => console.log('Form successfully submitted'))
+			.then(() => {
+				success = true;
+				email = '';
+				message = '';
+				subject = '';
+				name = '';
+			})
 			.catch((error) => alert(error));
 	}
 </script>
@@ -106,10 +114,17 @@
 			>
 		</div>
 
-		<button
-			type="submit"
-			class="text-black bg-blue2 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-			>Submit</button
+		<div
+			class="submit-wrapper flex-col sm:flex-row flex sm:items-center sm:space-x-3 space-y-3 sm:space-y-0"
 		>
+			<button
+				type="submit"
+				class="text-black bg-blue2 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+				>Submit</button
+			>
+			{#if success}
+				<p class="text-green-400 sm:text-start m-auto sm:m-0" in:fade>Thanks! &#10003;</p>
+			{/if}
+		</div>
 	</form>
 </div>
