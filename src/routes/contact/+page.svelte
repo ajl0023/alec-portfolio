@@ -5,9 +5,11 @@
 	let name = '';
 
 	async function handleSubmit(event) {
+		event.preventDefault();
 		const myForm = event.target;
+
 		const formData = new FormData(myForm);
-		
+
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -29,7 +31,7 @@
 		</div>
 	</div>
 	<form
-		on:submit|preventDefault="{handleSubmit}"
+		on:submit="{handleSubmit}"
 		class="sm:w-1/2 w-full px-5 sm:px-0"
 		name="contact"
 		method="post"
