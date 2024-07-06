@@ -1,5 +1,5 @@
 <script>
-	export const prerender = true;
+
 	let email = '';
 	let message = '';
 	let subject = '';
