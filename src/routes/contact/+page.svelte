@@ -10,7 +10,7 @@
 
 		const formData = new FormData(myForm);
 
-		fetch('/', {
+		fetch('/contact', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: new URLSearchParams(formData).toString()
