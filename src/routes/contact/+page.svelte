@@ -1,22 +1,20 @@
 <script>
-
 	let email = '';
 	let message = '';
 	let subject = '';
 	let name = '';
 
-	async function handleSubmit() {
-		const response = await fetch('/send-email', {
+	async function handleSubmit(event) {
+		const myForm = event.target;
+		const formData = new FormData(myForm);
+		
+		fetch('/', {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ email, message, subject, name })
-		});
-
-		if (response.ok) {
-			console.log('Email sent successfully!');
-		} else {
-			console.error('Failed to send email.');
-		}
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString()
+		})
+			.then(() => console.log('Form successfully submitted'))
+			.catch((error) => alert(error));
 	}
 </script>
 
