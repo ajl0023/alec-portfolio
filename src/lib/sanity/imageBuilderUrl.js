@@ -21,5 +21,5 @@ export function sanityAssetUrl(source) {
 
         return image_url + source.split('/').pop()
     }
-    return builder.image(source)
+    return source
 }

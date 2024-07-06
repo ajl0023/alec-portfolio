@@ -8,7 +8,7 @@
 
 	$: if (isOpen) {
 		document.body.style.overflow = 'hidden';
-		console.log('overflow hidden');
+	
 	}
 	function handleBackdropClick(event) {
 		if (event.target === event.currentTarget) {

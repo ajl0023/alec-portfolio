@@ -60,7 +60,7 @@
 	<div class="min-h-28">
 		<div class="mx-auto py-4">
 			{#each urlsToDisplay as reel_section}
-				<div class="gap-6 mt-8 md:flex">
+				<div class="mt-8 md:flex md:space-x-4 space-y-4 md:space-y-0">
 					{#each reel_section as { title, url, _id, role }, i}
 						<Reel
 							nowPlaying="{nowPlaying}"

@@ -41,25 +41,41 @@
 {/if}
 
 <div class="masonry-wrapper mt-5">
-	<JustifiedGrid
-		columnRange="{shouldRender ? [1, 3] : [1, 1]}"
-		gap="{5}"
-		sizeRange="{[200, 1000]}"
-		stretch="{true}"
-		stretchRange="{[244, 600]}"
-	>
-		{#each images as { url }, i}
-			<div
-				class="img-container cursor-pointer"
-				on:click="{() => {
-					console.log('clicked');
-					showModal = true;
-					currIndex = i;
-					imgToDisplay = url;
-				}}"
-			>
-				<img src="{sanityAssetUrl(url)}" alt="" class="w-full relative text-[0]" />
-			</div>
-		{/each}
-	</JustifiedGrid>
+	{#if shouldRender}
+		<JustifiedGrid
+			columnRange="{[1, 3]}"
+			gap="{5}"
+			sizeRange="{[200, 1000]}"
+			stretch="{true}"
+			stretchRange="{[244, 600]}"
+		>
+			{#each images as { url }, i}
+				<div
+					class="img-container cursor-pointer"
+					on:click="{() => {
+						showModal = true;
+						currIndex = i;
+						imgToDisplay = url;
+					}}"
+				>
+					<img src="{sanityAssetUrl(url)}" alt="" class="w-full relative text-[0]" />
+				</div>
+			{/each}
+		</JustifiedGrid>
+	{:else}
+		<div class="flex flex-wrap space-y-3">
+			{#each images as { url }, i}
+				<div
+					class="cursor-pointer"
+					on:click="{() => {
+						showModal = true;
+						currIndex = i;
+						imgToDisplay = url;
+					}}"
+				>
+					<img src="{sanityAssetUrl(url)}" alt="" class="w-full h-auto" />
+				</div>
+			{/each}
+		</div>
+	{/if}
 </div>

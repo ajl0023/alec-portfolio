@@ -62,50 +62,65 @@
 	];
 </script>
 
-<div class="wrapper mt-20 w-full">
+<div class="wrapper mt-10 sm:mt-20 w-full">
 	<div class="header-container">
-		<h2 class="text-blue2 font-semibold text-lg mb-5">About Me</h2>
+		<h2 class="text-blue2 font-semibold text-lg mb-5 text-center sm:text-left">About Me</h2>
 		<div
-			class="main-content-container flex text-white text-sm text-thin justify-between text-xs leading-5"
+			class="main-content-container flex flex-col-reverse sm:justify-between text-white text-sm text-thin text-xs leading-5 w-full sm:flex-row"
 		>
-			<div class="main-content w-[33%]">
-				<p class="mb-5">
-					Originally from Beijing, Alec Wang is an actor based in Los Angeles, California. Having
-					come to the US when he was 3, Alec is fluent in English and Mandarin. He has worked on
-					stage (middle school through UCSB and Peking University), and on screen (HBO's Westworld).
-					​ Alec is inspired by roles and filmmakers whose messages and stories transcend cultures
-					and boundaries.
-				</p>
-				<p>
-					Alec is inspired by roles and filmmakers whose messages and stories transcend cultures and
-					boundaries.
-				</p>
+			<div class="content-wrapper">
+				<div class="text-content px-5 sm:flex sm:p-0 sm:flex-row-reverse sm:justify-between">
+					<div class="info-container mb-4 mt-8 sm:m-10 sm:mt-0">
+						<ul>
+							<li>Height: 6"1</li>
+							<li>Eye Color: Brown</li>
+							<li>Hair Color: Black</li>
+							<li>Location: Los Angeles, CA</li>
+						</ul>
+					</div>
+					<div class="main-content sm:w-[33%]">
+						<p class="mb-5">
+							Originally from Beijing, Alec Wang is an actor based in Los Angeles, California.
+							Having come to the US when he was 3, Alec is fluent in English and Mandarin. He has
+							worked on stage (middle school through UCSB and Peking University), and on screen
+							(HBO's Westworld). ​ Alec is inspired by roles and filmmakers whose messages and
+							stories transcend cultures and boundaries.
+						</p>
+						<p>
+							Alec is inspired by roles and filmmakers whose messages and stories transcend cultures
+							and boundaries.
+						</p>
+					</div>
+				</div>
+				<button
+					class="bg-white px-3 py-2 text-xs hover:bg-blue2 transition-all mt-5 text-black sm:ml-0 ml-5"
+					>Download Full Resume</button
+				>
 			</div>
-			<div class="info-container">
-				<ul>
-					<li>Height: 6"1</li>
-					<li>Eye Color: Brown</li>
-					<li>Hair Color: Black</li>
-					<li>Location: Los Angeles, CA</li>
-				</ul>
-			</div>
-			<div class="main-image-container max-w-60">
-				<enhanced:img src="$lib/images/Headshot Recent_edited.jpg" class="w-full block" alt=""
-				></enhanced:img>
+			<div class="aspect-wrapper max-w-[400px] w-full sm:m-0 m-auto min-w-[200px]">
+				<div class="main-image-container sm:m-0 pb-[117.75%] relative">
+					<img
+						src="$lib/images/Headshot Recent_edited.jpg"
+						class="w-full h-full object-center object-cover absolute inset-0"
+						alt=""
+					/>
+				</div>
 			</div>
 		</div>
 	</div>
-	<button class="bg-white px-3 py-2 text-xs hover:bg-blue2 transition-all"
-		>Download Full Resume</button
-	>
-	<div class="divider h-[3px] bg-blue2 mt-10"></div>
+
+	<div class="divider h-[2px] bg-blue2 mt-10"></div>
 	<div class="exp-section-wrapper mt-10 space-y-20">
 		{#each exp_items as item}
-			<div class="exp-container font-semibold text-blue2 flex justify-between">
+			<div
+				class="exp-container font-semibold text-blue2 flex sm:justify-between flex-col items-center sm:flex-row
+				sm:items-start
+				"
+			>
 				<div class="category-container">
-					<h4 class="text-xl">{item.category}</h4>
+					<h4 class="text-xl mb-5 sm:mb-0">{item.category}</h4>
 				</div>
-				<div class="role-desc-container space-y-4 justify-start w-1/3">
+				<div class="role-desc-container space-y-4 justify-start sm:w-1/3 w-full">
 					{#each item.detailed_exp as role}
 						<ul class="text-sm font-normal">
 							<li class="text-white">{role.title}</li>
@@ -119,10 +134,10 @@
 		{/each}
 	</div>
 	<div class="skills-container mt-40">
-		<div class="font-semibold text-blue2 flex justify-between">
-			<h4 class="text-xl">Special Skills</h4>
+		<div class="font-semibold text-blue2 flex justify-between flex-col sm:flex-row">
+			<h4 class="text-xl mb-5 sm:mb-0 text-center sm:text-left">Special Skills</h4>
 
-			<div class="justify-start w-1/3 text-sm font-normal text-white">
+			<div class="justify-start sm:w-1/3 text-sm font-normal text-white">
 				<p>
 					Native Mandarin and English, Improv Experience, British Accent, Stage Combat Training,
 					Meisner Technique, Advanced Pianist/Keyboardist

@@ -47,8 +47,8 @@
 		{/if}
 	</div>
 
-	<span class="pt-4 grid grid-cols-6 gap-4">
-		<span class="col-start-1 col-end-3 text-md text-white font-serif">
+	<span class="md:mt-4 flex justify-between space-x-2 mt-3">
+		<span class="col-start-1 col-end-4 text-md text-white font-serif white">
 			{title}
 		</span>
 		<span class="col-end-7 col-span-2 text-sm text-slate-500 uppercase flex justify-end">
