@@ -16,6 +16,7 @@
 	let imgToDisplay = null;
 	let screenSize;
 	let shouldRender = null;
+	let loaded = false;
 	const handleResize = () => {
 		screenSize = window.innerWidth;
 		if (screenSize < 640) {
@@ -26,6 +27,7 @@
 	};
 	onMount(() => {
 		handleResize();
+		loaded = true;
 	});
 </script>
 
@@ -41,7 +43,7 @@
 {/if}
 
 <div class="masonry-wrapper mt-5">
-	{#if shouldRender}
+	{#if loaded && shouldRender}
 		<JustifiedGrid
 			columnRange="{[1, 3]}"
 			gap="{5}"

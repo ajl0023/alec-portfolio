@@ -16,7 +16,8 @@
 		<Navbar />
 
 		{#if pageload}
-			<div in:fade|local="{{ delay: 200, duration: 300 }}">
+			<!-- this is needed because no way to force keyed tarnsitions to run on page load -->
+			<div in:fade="{{ delay: 200, duration: 300 }}">
 				{#key $page}
 					<div class="content-wrapper z-[2]" in:fade="{{ delay: 200, duration: 300 }}">
 						<slot />
