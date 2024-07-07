@@ -52,7 +52,7 @@
 </script>
 
 <div class="relative flex min-h-screen flex-col mt-10">
-	<div class="video-player-wrapper">
+	<div class="video-player-wrapper aspect-w-16 aspect-h-9">
 		<div class="video">
 			<video bind:this="{main_vid}" playsinline controls src="{vidToPlay}"> </video>
 		</div>
@@ -60,7 +60,7 @@
 	<div class="min-h-28">
 		<div class="mx-auto py-4">
 			{#each urlsToDisplay as reel_section}
-				<div class="mt-8 md:flex md:space-x-4 space-y-4 md:space-y-0">
+				<div class="mt-8 md:flex md:space-x-4 space-y-4 md:space-y-0 ">
 					{#each reel_section as { title, url, _id, role }, i}
 						<Reel
 							nowPlaying="{nowPlaying}"

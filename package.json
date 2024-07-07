@@ -41,6 +41,7 @@
 		"@sanity/svelte-loader": "^1.11.32",
 		"@sveltejs/adapter-netlify": "^3.0.2",
 		"dotenv": "^16.0.3",
+		"embla-carousel-autoplay": "^8.1.6",
 		"embla-carousel-svelte": "^8.1.5",
 		"lodash-es": "^4.17.21",
 		"plyr": "^3.7.8",

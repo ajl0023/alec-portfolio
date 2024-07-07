@@ -13,7 +13,6 @@
 	function next() {
 		currIndex = (currIndex + 1) % galleryLength;
 	}
-
 </script>
 
 <div class="carousel-container flex items-center relative">
@@ -22,7 +21,7 @@
 
 	<!-- Current Item -->
 	<div class="carousel-item mx-4">
-		<img src="{imgToDisplay}" class="w-full" alt="" />
+		<img src="{imgToDisplay}" class="max-w-md" alt="" />
 	</div>
 
 	<!-- Right Arrow -->
