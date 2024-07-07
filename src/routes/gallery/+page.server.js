@@ -11,6 +11,10 @@
 //     // return await getImages('gallery_images')
 // }
 
+// static page
+
+
+
 import client from '$lib/sanity/client';
 
 
