@@ -35,8 +35,8 @@
 {#if showModal}
 	<Modal bind:isOpen="{showModal}">
 		<GalleryModal
-			currIndex="{currIndex}"
-			imgToDisplay="{imgToDisplay}"
+			bind:currIndex="{currIndex}"
+			imgToDisplay="{images[currIndex].url}"
 			galleryLength="{images.length}"
 		/>
 	</Modal>

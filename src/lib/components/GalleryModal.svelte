@@ -4,7 +4,6 @@
 	export let currIndex = 0;
 	export let imgToDisplay = null;
 	export let galleryLength = null;
-	let items = ['Item 1', 'Item 2', 'Item 3']; // Example items, replace with your own
 
 	function prev() {
 		currIndex = (currIndex - 1 + galleryLength) % galleryLength;
