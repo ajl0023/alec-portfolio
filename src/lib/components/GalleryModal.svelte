@@ -1,26 +1,26 @@
 <script>
 	import ModalNavArrow from './ModalNavArrow.svelte';
+	import { modalStore } from '$lib/stores/modalStore';
 
-	export let currIndex = 0;
-	export let imgToDisplay = null;
 	export let galleryLength = null;
 
 	function prev() {
-		currIndex = (currIndex - 1 + galleryLength) % galleryLength;
+		$modalStore.currIndex =
+			($modalStore.currIndex - 1 + $modalStore.imagesLength) % $modalStore.imagesLength;
 	}
 
 	function next() {
-		currIndex = (currIndex + 1) % galleryLength;
+		$modalStore.currIndex = ($modalStore.currIndex + 1) % $modalStore.imagesLength;
 	}
 </script>
 
-<div class="carousel-container flex items-center relative">
+<div class="carousel-container flex items-center relative w-full max-w-xl">
 	<!-- Left Arrow -->
 	<ModalNavArrow handleClick="{prev}" orient="{'left'}" />
 
 	<!-- Current Item -->
-	<div class="carousel-item mx-4">
-		<img src="{imgToDisplay}" class="max-w-xl" alt="" />
+	<div class="carousel-item">
+		<img src="{$modalStore.imgToDisplay}" alt="" />
 	</div>
 
 	<!-- Right Arrow -->

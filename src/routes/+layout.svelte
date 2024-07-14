@@ -1,9 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
+	import { getContext, onMount } from 'svelte';
 	import '../app.css';
 	import Navbar from '../lib/components/Navbar.svelte';
 	import { fade } from 'svelte/transition';
 	import { page } from '$app/stores';
+	import Modal from '$lib/components/Modal.svelte';
+	import GalleryModal from '$lib/components/GalleryModal.svelte';
+	import { modalStore } from '$lib/stores/modalStore';
 
 	let pageload = false;
 	onMount(() => {
@@ -13,6 +16,11 @@
 
 <div class="main-container overflow-hidden">
 	<div class="wrapper m-auto max-w-4xl w-full p-5">
+		{#if $modalStore.visible}
+			<Modal>
+				<GalleryModal />
+			</Modal>
+		{/if}
 		<Navbar />
 
 		{#if pageload}

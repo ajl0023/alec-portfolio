@@ -1,32 +1,25 @@
 <script>
-	export let isOpen = false;
+	import { modalStore } from '$lib/stores/modalStore';
 
-	function closeModal() {
-		isOpen = false;
-		document.body.style.overflow = 'auto';
-	}
-
-	$: if (isOpen) {
-		document.body.style.overflow = 'hidden';
-	
-	}
 	function handleBackdropClick(event) {
-		if (event.target === event.currentTarget) {
-			closeModal();
+		if (event.target === wrapper) {
+			$modalStore.visible = false;
 		}
 	}
 	function handleKeyDown(event) {
 		if (event.key === 'Escape') {
-			closeModal();
+			$modalStore.visible = false;
 		}
 	}
+	let wrapper;
 </script>
 
-{#if isOpen}
+{#if $modalStore.visible}
 	<!-- Modal Background -->
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div
-		class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-[120px] modal-wrapper"
+		bind:this="{wrapper}"
+		class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[600] modal-wrapper p-5"
 		on:click="{handleBackdropClick}"
 		on:keypress="{handleKeyDown}"
 	>
