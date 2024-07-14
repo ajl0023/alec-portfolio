@@ -1,9 +1,6 @@
 // import { getImages } from '$lib/utils/utils.js';
 
-
-
 // export async function load({ params, fetch }) {
-
 
 //     return
 //     // const { id } = params;
@@ -13,12 +10,10 @@
 
 import client from '$lib/sanity/client';
 
-
 export const load = async (event) => {
-    const data = await client.fetch(`*[_type == "reel"]`);
-    
-    return {
-        reel_videos: data
-    }
+	const data = await client.fetch(`*[_type == "reel"]|order(orderRank)`);
 
+	return {
+		reel_videos: data
+	};
 };
