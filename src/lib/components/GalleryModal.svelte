@@ -20,7 +20,7 @@
 
 	<!-- Current Item -->
 	<div class="carousel-item mx-4">
-		<img src="{imgToDisplay}" class="max-w-md" alt="" />
+		<img src="{imgToDisplay}" class="max-w-xl" alt="" />
 	</div>
 
 	<!-- Right Arrow -->
