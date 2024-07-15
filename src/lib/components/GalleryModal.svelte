@@ -16,7 +16,9 @@
 
 <div class="carousel-container flex items-center relative w-full max-w-xl">
 	<!-- Left Arrow -->
-	<ModalNavArrow handleClick="{prev}" orient="{'left'}" />
+	<div class="button-container absolute top-1/2 transform -translate-y-1/2 left-0 lg:-translate-x-20">
+		<ModalNavArrow handleClick="{prev}" orient="{'left'}" />
+	</div>
 
 	<!-- Current Item -->
 	<div class="carousel-item">
@@ -24,8 +26,9 @@
 	</div>
 
 	<!-- Right Arrow -->
-
-	<ModalNavArrow handleClick="{next}" orient="{'right'}" />
+	<div class="button-container absolute top-1/2 transform -translate-y-1/2 end-0 lg:translate-x-20">
+		<ModalNavArrow handleClick="{next}" orient="{'right'}" />
+	</div>
 </div>
 
 <style>

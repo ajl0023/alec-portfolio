@@ -38,11 +38,22 @@
 				{/each}
 			</div>
 		</div>
-		<button class="embla__prev" on:click="{emblaApi.scrollPrev()}">
+		<div
+			class="embla__prev absolute top-1/2 transform -translate-y-1/2 left-0"
+			on:click="{emblaApi.scrollPrev()}"
+		>
 			<ModalNavArrow orient="left" />
-		</button>
-		<button class="embla__next" on:click="{emblaApi.scrollNext()}">
+		</div>
+		<div
+			class="embla__next absolute top-1/2 transform -translate-y-1/2 right-0"
+			on:click="{emblaApi.scrollNext()}"
+		>
 			<ModalNavArrow orient="right" />
-		</button>
+		</div>
 	</div>
+	<button class="socials-wrapper mt-5 float-right">
+		<a href="https://www.instagram.com/alecnnw/" target="_blank">
+			<img src="$lib/images/misc/instalogo.png" alt="" />
+		</a>
+	</button>
 </div>

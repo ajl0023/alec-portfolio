@@ -54,7 +54,7 @@
 		<div class="bottom-container md:flex md:justify-between font-[300] text-sm">
 			<p class="text-white">Actor, Los Angeles CA</p>
 			<ul
-				class="nav-list-container flex text-white md:space-x-7 md:mt-2 md:mt-0 flex-col md:flex-row divide-y md:divide-none divide-solid mt-4
+				class="nav-list-container flex text-white md:space-x-7 md:mt-0 flex-col md:flex-row divide-y md:divide-none divide-solid mt-4
 					
 				"
 			>
@@ -63,7 +63,7 @@
 						class="hover:text-blue2 transition-colors py-2 md:py-0
 						cursor-pointer md:cursor-auto"
 					>
-						<a href="{to}">{title}</a>
+						<a class="block" href="{to}">{title}</a>
 					</li>
 				{/each}
 			</ul>

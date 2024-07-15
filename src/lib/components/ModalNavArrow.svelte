@@ -6,7 +6,7 @@
 {#if orient === 'left'}
 	<button
 		type="button"
-		class="absolute lg:start-[-100px] start-0 z-30 items-center justify-center group focus:outline-none cursor-auto flex"
+		class="items-center justify-center group focus:outline-none cursor-auto flex"
 		data-carousel-prev
 	>
 		<span
@@ -32,7 +32,7 @@
 {:else}
 	<button
 		type="button"
-		class="absolute lg:end-[-100px] end-0 z-30 flex items-center justify-center group focus:outline-none cursor-auto"
+		class="flex items-center justify-center group focus:outline-none cursor-auto"
 		data-carousel-next
 	>
 		<span

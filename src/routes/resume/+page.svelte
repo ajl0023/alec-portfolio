@@ -60,6 +60,23 @@
 			]
 		}
 	];
+
+	async function downloadFile() {
+		const fileUrl =
+			'https://b68c1185-bc0a-48e5-aed7-69643bbda34c.filesusr.com/ugd/5af8b6_4ee6909aba50416dad7f024d0e6a041b.pdf';
+		const response = await fetch(fileUrl);
+		const blob = await response.blob();
+		const url = URL.createObjectURL(blob);
+
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = 'resunme.pdf';
+		document.body.appendChild(a);
+		a.click();
+
+		URL.revokeObjectURL(url);
+		document.body.removeChild(a);
+	}
 </script>
 
 <div class="wrapper mt-10 sm:mt-20 w-full">
@@ -93,6 +110,7 @@
 					</div>
 				</div>
 				<button
+					on:click="{downloadFile}"
 					class="bg-white px-3 py-2 text-xs hover:bg-blue2 transition-all mt-5 text-black sm:ml-0 ml-5"
 					>Download Full Resume</button
 				>
