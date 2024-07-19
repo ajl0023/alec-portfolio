@@ -70,7 +70,7 @@
 
 		const a = document.createElement('a');
 		a.href = url;
-		a.download = 'resunme.pdf';
+		a.download = 'resume.pdf';
 		document.body.appendChild(a);
 		a.click();
 

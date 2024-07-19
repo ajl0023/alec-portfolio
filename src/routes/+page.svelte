@@ -51,9 +51,16 @@
 			<ModalNavArrow orient="right" />
 		</div>
 	</div>
-	<button class="socials-wrapper mt-5 float-right">
-		<a href="https://www.instagram.com/alecnnw/" target="_blank">
-			<img src="$lib/images/misc/instalogo.png" alt="" />
-		</a>
-	</button>
+	<div class="icons-container flex justify-end items-center space-x-2">
+		<div class="socials-wrapper mt-5 max-w-6">
+			<a href="https://www.instagram.com/alecnnw/" target="_blank">
+				<img src="$lib/images/misc/instalogo.png" alt="" class="w-full" />
+			</a>
+		</div>
+		<div class="socials-wrapper mt-5 max-w-6">
+			<a href="https://www.tiktok.com/@alecmhw" target="_blank">
+				<img src="$lib/images/misc/tiktokicon.png" class="w-full" alt="" />
+			</a>
+		</div>
+	</div>
 </div>

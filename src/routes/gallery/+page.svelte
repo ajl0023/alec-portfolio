@@ -77,7 +77,12 @@
 	{:else}
 		<div class="flex flex-wrap space-y-3">
 			{#each images as { url }, i}
-				<div class="cursor-pointer">
+				<div
+					class="cursor-pointer"
+					on:click="{() => {
+						openModal(i, url);
+					}}"
+				>
 					<img src="{sanityAssetUrl(url)}" alt="" class="w-full h-auto" />
 				</div>
 			{/each}
