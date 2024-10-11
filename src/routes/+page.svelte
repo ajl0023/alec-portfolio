@@ -51,15 +51,20 @@
 			<ModalNavArrow orient="right" />
 		</div>
 	</div>
-	<div class="icons-container flex justify-end items-center space-x-2">
-		<div class="socials-wrapper mt-5 max-w-6">
-			<a href="https://www.instagram.com/alecnnw/" target="_blank">
-				<img src="$lib/images/misc/instalogo.png" alt="" class="w-full" />
+	<div class="icons-container flex justify-end items-center space-x-3 mt-5">
+		<div class="socials-wrapper w-5 h-5">
+			<a href="https://www.instagram.com/alecnnw/" class="block" target="_blank">
+				<img src="$lib/images/misc/instalogo.svg" alt="" class="w-full" />
 			</a>
 		</div>
-		<div class="socials-wrapper mt-5 max-w-6">
+		<div class="socials-wrapper w-5 h-5">
 			<a href="https://www.tiktok.com/@alecmhw" target="_blank">
-				<img src="$lib/images/misc/tiktokicon.png" class="w-full" alt="" />
+				<img src="$lib/images/misc/tiktokicon.svg" class="w-full" alt="" />
+			</a>
+		</div>
+		<div class="socials-wrapper w-5 h-5">
+			<a href="https://www.imdb.com/name/nm12080733/?ref_=ext_shr_lnk" target="_blank">
+				<img src="$lib/images/misc/imdblogo.svg" class="w-full" alt="" />
 			</a>
 		</div>
 	</div>

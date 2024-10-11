@@ -31,11 +31,28 @@
 <div
 	class="wrapper flex w-full justify-between mt-10 sm:flex-row flex-col items-center sm:items-start"
 >
-	<div class="contact-info text-white max-w-sm">
+	<div class="contact-info text-white max-w-sm flex flex-col items-center sm:items-start">
 		<h2 class="font-semibold text-blue2 mb-10 text-xl text-center sm:text-start">Contact Me</h2>
-		<div class="info-container mb-4 sm:mb-0">
+		<div class="info-container mb-4 sm:mb-0 text-center sm:text-start">
 			<p>626-354-9322</p>
 			<p>alecwangla@gmail.com</p>
+		</div>
+		<div class="icons-container flex sm:items-center space-x-3 justify-start mt-5">
+			<div class="socials-wrapper w-5 h-5">
+				<a href="https://www.instagram.com/alecnnw/" class="block" target="_blank">
+					<img src="$lib/images/misc/instalogo.svg" alt="" class="w-full" />
+				</a>
+			</div>
+			<div class="socials-wrapper w-5 h-5">
+				<a href="https://www.tiktok.com/@alecmhw" target="_blank">
+					<img src="$lib/images/misc/tiktokicon.svg" class="w-full" alt="" />
+				</a>
+			</div>
+			<div class="socials-wrapper w-5 h-5">
+				<a href="https://www.imdb.com/name/nm12080733/?ref_=ext_shr_lnk" target="_blank">
+					<img src="$lib/images/misc/imdblogo.svg" class="w-full" alt="" />
+				</a>
+			</div>
 		</div>
 	</div>
 	<form

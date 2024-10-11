@@ -100,12 +100,10 @@
 							Originally from Beijing, Alec Wang is an actor based in Los Angeles, California.
 							Having come to the US when he was 3, Alec is fluent in English and Mandarin. He has
 							worked on stage (middle school through UCSB and Peking University), and on screen
-							(HBO's Westworld). ​ Alec is inspired by roles and filmmakers whose messages and
-							stories transcend cultures and boundaries.
+							(HBO's Westworld and NBC’s Law & Order)
 						</p>
 						<p>
-							Alec is inspired by roles and filmmakers whose messages and stories transcend cultures
-							and boundaries.
+							Alec is inspired by roles and filmmakers whose messages and stories transcend cultures and boundaries.
 						</p>
 					</div>
 				</div>
