@@ -21,6 +21,8 @@
 		"classnames": "^2.3.2",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
+		"flowbite": "^3.1.2",
+		"flowbite-svelte": "^0.48.4",
 		"postcss": "^8.4.21",
 		"postcss-nested": "^6.0.0",
 		"prettier": "^2.8.3",
