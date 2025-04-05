@@ -1,0 +1,268 @@
+{
+	"about_title": [
+		{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "About Me" },
+		{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "关于我" }
+	],
+	"height": [
+		{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Height: 6'1\"" },
+		{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "身高：186cm/6'1\"" }
+	],
+	"eye_color": [
+		{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Eye Color: Brown" },
+		{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "眼睛颜色：棕色" }
+	],
+	"hair_color": [
+		{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Hair Color: Black" },
+		{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "头发颜色：黑色" }
+	],
+	"location": [
+		{
+			"_key": "en",
+			"_type": "internationalizedArrayStringValue",
+			"value": "Location: Los Angeles, CA"
+		},
+		{
+			"_key": "cn",
+			"_type": "internationalizedArrayStringValue",
+			"value": "地点：加利福尼亚州洛杉矶"
+		}
+	],
+	"bio_1": [
+		{
+			"_key": "en",
+			"_type": "internationalizedArrayStringValue",
+			"value": "Originally from Beijing, Alec Wang is an actor based in Los Angeles, California. Having come to the US when he was 3, Alec is fluent in English and Mandarin. He has worked on stage (middle school through UCSB and Peking University), and on screen (HBO's Westworld and NBC’s Law & Order)"
+		},
+		{
+			"_key": "cn",
+			"_type": "internationalizedArrayStringValue",
+			"value": "Alec Wang (王牧辉) 出生于北京，现居加利福尼亚州洛杉矶。Alec 在 3 岁时就来到美国，能说流利的英语和普通话。他曾上过舞台剧（从中学到北京大学和加州大学圣塔芭芭拉），也曾出演过美国电视剧（HBO 的《西部世界》和 NBC 的《法律与秩序》）。"
+		}
+	],
+	"bio_2": [
+		{
+			"_key": "en",
+			"_type": "internationalizedArrayStringValue",
+			"value": "Alec is inspired by roles and filmmakers whose messages and stories transcend cultures and boundaries."
+		},
+		{
+			"_key": "cn",
+			"_type": "internationalizedArrayStringValue",
+			"value": "Alec 的灵感来自于那些超越文化和边界、具有深刻意义的角色和电影制作人。"
+		}
+	],
+	"resume_cta": [
+		{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Download Full Resume" },
+		{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "下载完整简历" }
+	],
+	"experience": [
+		{
+			"category": [
+				{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Television" },
+				{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "电视" }
+			],
+			"detailed_exp": [
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "NBC | Law & Order: Organized Crime | 2023"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "NBC | 法網遊龍：有组织犯罪| Law &Order: Organized Crime | 2023 年"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Guest Star" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "客串明星" }
+					]
+				},
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "HBO | Westworld | 2022"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "HBO | 西部世界| Westworld | 2022"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Guest Star" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "客串明星" }
+					]
+				}
+			]
+		},
+		{
+			"category": [
+				{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Features" },
+				{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "电影" }
+			],
+			"detailed_exp": [
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "Short Film | Chunghwa Smoke | 2022"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "短片 | 中华烟 | 2022"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Lead" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "主演" }
+					]
+				},
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "Short Film | Lion's Head | 2022"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "短片 | 狮子头 | 2022"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Lead" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "主演" }
+					]
+				},
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "Short Film | Father | 2021"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "短片 | 父亲 | 2021"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Lead" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "主演" }
+					]
+				},
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "Short Film | Endless Summer | 2021"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "短片 | 无尽的夏天 | 2021"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Lead" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "主演" }
+					]
+				}
+			]
+		},
+		{
+			"category": [
+				{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Stage" },
+				{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "舞台剧" }
+			],
+			"detailed_exp": [
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "Peking University Theater | Peking University 120th Anniversary Gala | 2018"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "北京大学剧场 | 北京大学120周年校庆晚会 | 2018"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Host" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "主持人" }
+					]
+				},
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "UCSB Theater and Dance | Hamlet | 2018"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "UCSB 戏剧与舞蹈 | 哈姆雷特 | 2018"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Hamlet" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "哈姆雷特" }
+					]
+				},
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "UCSB Theater and Dance | Kafka's Jackals and Arabs | 2017"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "UCSB 戏剧与舞蹈 | 卡夫卡的豺狼和阿拉伯人 | 2017"
+						}
+					],
+					"role": [
+						{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Head Jackal" },
+						{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "豺狼头" }
+					]
+				}
+			]
+		},
+		{
+			"category": [
+				{ "_key": "en", "_type": "internationalizedArrayStringValue", "value": "Commercials" },
+				{ "_key": "cn", "_type": "internationalizedArrayStringValue", "value": "商业广告" }
+			],
+			"detailed_exp": [
+				{
+					"title": [
+						{
+							"_key": "en",
+							"_type": "internationalizedArrayStringValue",
+							"value": "List Available Upon Request"
+						},
+						{
+							"_key": "cn",
+							"_type": "internationalizedArrayStringValue",
+							"value": "可根据要求提供列表"
+						}
+					]
+				}
+			]
+		}
+	]
+}

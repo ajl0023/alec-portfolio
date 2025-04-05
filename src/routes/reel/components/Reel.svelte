@@ -1,6 +1,7 @@
 <script>
 	import { sanityAssetUrl } from '$lib/sanity/imageBuilderUrl';
 	import PlayButton from '../../../lib/components/PlayButton.svelte';
+	import TranslationText from '../../../lib/components/TranslationText.svelte';
 
 	export let _id;
 	export let title;
@@ -50,10 +51,12 @@
 
 		<span class="md:mt-4 flex justify-between space-x-2 mt-3">
 			<span class="col-start-1 col-end-4 text-md text-white font-serif white">
-				{title}
+				<TranslationText translateKey="reel.title" text="{title}" />
 			</span>
 			<span class="col-end-7 col-span-2 text-sm text-slate-500 uppercase flex justify-end">
-				<span class=""> {role} </span>
+				<span class="">
+					<TranslationText translateKey="reel.title" text="{role}" />
+				</span>
 			</span>
 		</span>
 	</div>
