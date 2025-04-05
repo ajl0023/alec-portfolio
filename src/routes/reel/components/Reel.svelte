@@ -30,7 +30,7 @@
 			}}"
 			on:click="{() => nowPlaying(url)}"
 		>
-			<video class="object-cover h-82 w-full bg-black" muted bind:this="{video}">
+			<video class="object-cover h-82 w-full" muted bind:this="{video}">
 				<source src="{sanityAssetUrl(url)}" type="video/mp4" />
 			</video>
 			{#if vidToPlay === url}
