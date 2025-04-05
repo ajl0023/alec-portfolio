@@ -3,12 +3,43 @@
 	import { onMount } from 'svelte';
 
 	import TranslateWidget from './TranslateWidget.svelte';
+	import TranslationText from './TranslationText.svelte';
 	let nav_options = [
-		{ title: 'Home', to: '/' },
-		{ title: 'Resume', to: '/resume' },
-		{ title: 'Gallery', to: '/gallery' },
-		{ title: 'Reel', to: '/reel' },
-		{ title: 'Contact', to: '/contact' }
+		{
+			title: [
+				{ _key: 'en', _type: 'internationalizedArrayStringValue', value: 'Home' },
+				{ _key: 'cn', _type: 'internationalizedArrayStringValue', value: '主页' }
+			],
+			to: '/'
+		},
+		{
+			title: [
+				{ _key: 'en', _type: 'internationalizedArrayStringValue', value: 'Resume' },
+				{ _key: 'cn', _type: 'internationalizedArrayStringValue', value: '演员简历' }
+			],
+			to: '/resume'
+		},
+		{
+			title: [
+				{ _key: 'en', _type: 'internationalizedArrayStringValue', value: 'Gallery' },
+				{ _key: 'cn', _type: 'internationalizedArrayStringValue', value: '照片作品集' }
+			],
+			to: '/gallery'
+		},
+		{
+			title: [
+				{ _key: 'en', _type: 'internationalizedArrayStringValue', value: 'Reel' },
+				{ _key: 'cn', _type: 'internationalizedArrayStringValue', value: '表演片段' }
+			],
+			to: '/reel'
+		},
+		{
+			title: [
+				{ _key: 'en', _type: 'internationalizedArrayStringValue', value: 'Contact' },
+				{ _key: 'cn', _type: 'internationalizedArrayStringValue', value: '联系' }
+			],
+			to: '/contact'
+		}
 	];
 	let wrapper;
 	const hideMenu = () => {
@@ -106,7 +137,9 @@
 							class="hover:text-blue2 transition-colors py-2 md:py-0
 							cursor-pointer md:cursor-auto"
 						>
-							<a class="block" href="{to}">{title}</a>
+							<a class="block" href="{to}">
+								<TranslationText text="{title}" />
+							</a>
 						</li>
 					{/each}
 					<TranslateWidget
