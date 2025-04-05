@@ -11,6 +11,6 @@ set /p commitMessage="Enter commit message: "
 git commit -m "%commitMessage%"
 
 :: Push changes to the remote repository
-git push
+git push origin main
 
 endlocal
