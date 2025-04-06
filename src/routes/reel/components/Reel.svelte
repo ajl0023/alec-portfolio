@@ -37,7 +37,7 @@
 				playsinline
 				preload="metadata"
 			>
-				<source src="{sanityAssetUrl(url)}" type="video/mp4" />
+				<source src="{sanityAssetUrl(url)}#t=0.001" type="video/mp4" />
 			</video>
 			{#if vidToPlay === url}
 				<div
