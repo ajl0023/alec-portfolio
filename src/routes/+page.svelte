@@ -38,7 +38,8 @@
 				{/each}
 			</div>
 		</div>
-		<div
+		<!-- wants only one photo so no arrows i guess -->
+		<!-- <div
 			class="embla__prev absolute top-1/2 transform -translate-y-1/2 left-0"
 			on:click="{emblaApi.scrollPrev()}"
 		>
@@ -49,7 +50,7 @@
 			on:click="{emblaApi.scrollNext()}"
 		>
 			<ModalNavArrow orient="right" />
-		</div>
+		</div> -->
 	</div>
 	<div class="icons-container flex justify-end items-center space-x-3 mt-5">
 		<div class="socials-wrapper w-5 h-5">

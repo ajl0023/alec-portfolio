@@ -67,7 +67,7 @@
 
 	async function downloadFile() {
 		const fileUrl =
-			'https://b68c1185-bc0a-48e5-aed7-69643bbda34c.filesusr.com/ugd/5af8b6_4ee6909aba50416dad7f024d0e6a041b.pdf';
+			'https://res.cloudinary.com/dz5oxdy9x/image/upload/v1745809755/ALEC_WANG_Recent_Resume_1_odsfxx.pdf';
 		const response = await fetch(fileUrl);
 		const blob = await response.blob();
 		const url = URL.createObjectURL(blob);
@@ -106,7 +106,7 @@
 						</ul>
 					</div>
 					<div class="main-content sm:w-[33%]">
-						<p class="mb-5">
+						<p class="whitespace-pre-wrap">
 							<TranslationText text="{data['bio_1']}" />
 						</p>
 						<p>
@@ -123,8 +123,8 @@
 			<div class="aspect-wrapper max-w-[400px] w-full sm:m-0 m-auto min-w-[200px]">
 				<div class="main-image-container sm:m-0 pb-[117.75%] relative">
 					<img
-						src="$lib/images/headshot.jpg"
-						class="w-full h-full object-center object-cover absolute inset-0"
+						src="$lib/images/headshot_final.jpg"
+						class="w-full h-full object-cover absolute inset-0 object-top"
 						alt=""
 					/>
 				</div>
